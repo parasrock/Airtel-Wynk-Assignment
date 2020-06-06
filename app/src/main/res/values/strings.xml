@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Airtel Wynk Assignment</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_no_network">No Network Connected</string>
+    <string name="text_no_news_found">No News found</string>
+    <string name="text_no_more_news">No more news</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_news_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/drawable_shadow"
+        app:layout_constraintDimensionRatio="1:0.6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        tools:text="CNN"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="@id/iv_news_image"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPublishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        tools:text="11 May, 2020"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintTop_toTopOf="@id/tvSource"
+        app:layout_constraintBottom_toBottomOf="@id/tvSource"
+        app:layout_constraintStart_toEndOf="@id/tvSource" />
+
+    <TextView
+        android:id="@+id/tvNewsTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        tools:text="jdbhs vfns hdfj jdfk hdfj kdfj sffdv"
+        android:textSize="@dimen/font_16"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_5"
+        app:layout_constraintBottom_toTopOf="@id/tvSource"
+        app:layout_constraintStart_toStartOf="@id/tvSource"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
